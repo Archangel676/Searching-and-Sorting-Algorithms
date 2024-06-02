@@ -21,6 +21,28 @@ string getInput(ifstream& addressFile)
     return addressString;
 }
 
+/**
+ * @brief Takes the full address and returns the area code of the address as a
+ * string
+ * @param input Full address from input
+ * @return string Returns a string of just the area code in digits
+ */
+string getAreaCode(const string& input)
+{
+  size_t commaOne = input.find(",");
+  size_t commaTwo = input.find(",", commaOne + 1);
+  string fullAreaCode = input.substr(commaTwo + 1);
+
+  size_t areaCodeLength = fullAreaCode.length();
+
+  if (areaCodeLength > 5) {
+    size_t areaCodeDash = fullAreaCode.find("-");
+    string formatedAreaCode = fullAreaCode.replace(areaCodeDash, 1, "");
+    return formatedAreaCode;
+  } else
+    return fullAreaCode;
+}
+
 // Write code to open the file and then read in each line, parse the data, and
 // create a Region. Add them all to a vector<Region> called regions.
 
