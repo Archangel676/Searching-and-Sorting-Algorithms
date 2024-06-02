@@ -3,10 +3,10 @@
 
 #include <string>
 
-using std::string
-    //   Any structs/classes/functions you define should be in helpers.h
+using std::string;
+//   Any structs/classes/functions you define should be in helpers.h
 
-    struct Region {
+struct Region {
   int ID;
   string cityName;
   string state;
