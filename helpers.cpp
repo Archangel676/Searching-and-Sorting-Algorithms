@@ -22,6 +22,11 @@ string getAreaCode(const string& input)
   size_t commaOne = input.find(",");
   size_t commaTwo = input.find(",", commaOne + 1);
 
+  // 20330,San Francisco,CA
+
+  // size_t areaCodeLength = fullAreaCode.length();
+  // size_t cityLength = fullAreaCode.length();
+
   string areaCode = input.substr(commaTwo + 1);
   string city = input.substr(commaTwo + 1);
   string state = input.substr(commaTwo + 1);
