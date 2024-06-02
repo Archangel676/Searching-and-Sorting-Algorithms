@@ -1,6 +1,7 @@
 #ifndef HELPERS_H
 #define HELPERS_H
 
+#include <fstream>
 #include <string>
 
 using std::string;
@@ -11,5 +12,7 @@ struct Region {
   string cityName;
   string state;
 };
+
+string getInput(ifstream& addressFile);
 
 #endif HELPERS_H
