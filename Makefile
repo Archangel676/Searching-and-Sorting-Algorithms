@@ -7,9 +7,9 @@ CXXFLAGS += -Wfloat-equal -Wredundant-decls -Wshadow -Wconversion
 HEADERS = helpers.h
 
 # list .cpp files here according to main program, tests, or both
-PROGRAM_FILES = main.cpp helpers.cpp
+PROGRAM_FILES = main.cpp 
 TEST_FILES = tests.cpp
-SHARED_FILES = 
+SHARED_FILES = helpers.cpp
 
 .PHONY: all
 all: program.exe tests.exe
