@@ -21,16 +21,12 @@ string getAreaCode(const string& input)
 {
   size_t commaOne = input.find(",");
   size_t commaTwo = input.find(",", commaOne + 1);
-  string fullAreaCode = input.substr(commaTwo + 1);
 
-  size_t areaCodeLength = fullAreaCode.length();
+  string areaCode = input.substr(commaTwo + 1);
+  string city = input.substr(commaTwo + 1);
+  string state = input.substr(commaTwo + 1);
 
-  if (areaCodeLength > 5) {
-    size_t areaCodeDash = fullAreaCode.find("-");
-    string formatedAreaCode = fullAreaCode.replace(areaCodeDash, 1, "");
-    return formatedAreaCode;
-  } else
-    return fullAreaCode;
+  return "formatedAreaCode";
 }
 
 // Write code to open the file and then read in each line, parse the data, and
