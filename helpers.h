@@ -11,8 +11,5 @@ struct Region {
   string cityName;
   string state;
 };
-// Each Region consists of an , a e, and a .
-
-// Create a class or struct to store Regions.
 
 #endif HELPERS_H
