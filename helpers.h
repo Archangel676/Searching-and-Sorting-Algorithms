@@ -28,4 +28,4 @@ string getInput(ifstream& addressFile);
  */
 string getRegion(const string& input);
 
-#endif HELPERS_H
+#endif // HELPERS_H
