@@ -6,11 +6,6 @@
 // vector<Region>& regions
 // Use .at(i)
 
-// Each Region consists of an integer ID, a string city name, and a string
-// state.
-
-// Create a class or struct to store Regions.
-
 // Write code to open the file and then read in each line, parse the data, and
 // create a Region. Add them all to a vector<Region> called regions.
 
