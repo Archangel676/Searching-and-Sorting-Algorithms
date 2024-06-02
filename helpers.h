@@ -26,6 +26,6 @@ string getInput(ifstream& addressFile);
  * @param input Full address from input
  * @return string Returns a string of just the area code in digits
  */
-string getAreaCode(const string& input);
+string getRegion(const string& input);
 
 #endif HELPERS_H
