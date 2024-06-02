@@ -2,6 +2,7 @@
 #define HELPERS_H
 
 #include <fstream>
+#include <iostream>
 #include <string>
 
 using std::string;
