@@ -23,6 +23,9 @@ string getAreaCode(const string& input)
   size_t commaTwo = input.find(",", commaOne + 1);
 
   // 20330,San Francisco,CA
+  // 1st param = Position of the first character to be copied as a substring.
+  // 2nd param = Number of characters to include in the substring,
+  // default: all characters until the end of the string.
 
   // size_t areaCodeLength = fullAreaCode.length();
   // size_t cityLength = fullAreaCode.length();
