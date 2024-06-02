@@ -5,3 +5,13 @@
 // When using a vector as a parameter should be a reference parameter:
 // vector<Region>& regions
 // Use .at(i)
+
+// Each Region consists of an integer ID, a string city name, and a string
+// state.
+
+// Create a class or struct to store Regions.
+
+// Write code to open the file and then read in each line, parse the data, and
+// create a Region. Add them all to a vector<Region> called regions.
+
+// Print out the first five Regions (id, city, and state) in your vector.
