@@ -1,8 +1,10 @@
 #ifndef HELPERS_H
 #define HELPERS_H
 
+#include <string>
+
 // using std::string
-//  Any structs/classes/functions you define should be in helpers.h
+//   Any structs/classes/functions you define should be in helpers.h
 
 struct Region {
   int ID;
