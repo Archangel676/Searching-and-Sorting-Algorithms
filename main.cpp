@@ -20,6 +20,9 @@ int main()
   // TO Do: Part 1
   string s = getRegion("20330,San Francisco,CA");
   cout << s;
+  ifstream zillowData;
+  zillowData.open("ZILLOW_REGIONS.csv");
+  string ss = getInput(zillowData);
 
   // cout << "-----------------------------Part 2-----------------------------"
   // << endl; TO Do: Part 2
