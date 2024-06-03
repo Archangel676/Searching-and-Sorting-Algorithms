@@ -44,14 +44,14 @@ int main()
   cout << regions.at(0).ID << endl;
   cout << regions.at(0).cityName << endl;
   cout << regions.at(0).state << endl;
-  cout << "Trying index 300:" << endl;
-  cout << regions.at(300).ID << endl;
-  cout << regions.at(300).cityName << endl;
-  cout << regions.at(300).state << endl;
-  cout << "Trying index 2000:" << endl;
-  cout << regions.at(2000).ID << endl;
-  cout << regions.at(2000).cityName << endl;
-  cout << regions.at(2000).state << endl;
+  cout << "Trying index 5:" << endl;
+  cout << regions.at(5).ID << endl;
+  cout << regions.at(5).cityName << endl;
+  cout << regions.at(5).state << endl;
+  cout << "Trying index 9:" << endl;
+  cout << regions.at(9).ID << endl;
+  cout << regions.at(9).cityName << endl;
+  cout << regions.at(9).state << endl;
 
   // cout << "-----------------------------Part 2-----------------------------"
   // << endl; TO Do: Part 2
