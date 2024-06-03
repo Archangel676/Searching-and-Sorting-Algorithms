@@ -47,7 +47,7 @@ string getRegion(const string& input)
   string city = input.substr(commaOne + 1, (commaTwo - commaOne + 1));
   string state = input.substr(commaTwo + 1);
 
-  return areaCode + city + state;
+  return areaCode + " " + city + " " + state;
 }
 
 // Write code to open the file and then read in each line, parse the data, and
