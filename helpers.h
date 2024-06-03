@@ -16,6 +16,6 @@ struct Region {
 
 string getInputLine(ifstream& addressFile);
 
-string getRegion(const string& input);
+string parseIntoRegion(const string& input);
 
 #endif // HELPERS_H

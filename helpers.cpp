@@ -10,7 +10,7 @@
 // create a Region. Add them all to a vector<Region> called regions.
 
 // Print out the first five Regions (id, city, and state) in your vector.
-string getInput(ifstream& addressFile)
+string getInputLine(ifstream& addressFile)
 {
   string addressString;
   getline(addressFile, addressString);
@@ -21,7 +21,7 @@ string getInput(ifstream& addressFile)
     return addressString;
 }
 
-string getRegion(const string& input)
+string parseIntoRegion(const string& input)
 {
   size_t commaOne = input.find(",");
   size_t commaTwo = input.find(",", commaOne + 1);

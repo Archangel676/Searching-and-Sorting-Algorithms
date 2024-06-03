@@ -22,7 +22,7 @@ int main()
   ifstream zillowData;
   zillowData.open("ZILLOW_REGIONS.csv");
   string one = getInput(zillowData);
-  string s = getRegion(one);
+  string s = parseIntoRegion(one);
   cout << s << endl;
   string two = getInput(zillowData);
   // string three = getInput(zillowData);
