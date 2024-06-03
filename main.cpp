@@ -19,10 +19,15 @@ int main()
        << endl;
   // TO Do: Part 1
   string s = getRegion("20330,San Francisco,CA");
-  cout << s;
+  cout << s << endl;
   ifstream zillowData;
   zillowData.open("ZILLOW_REGIONS.csv");
-  string ss = getInput(zillowData);
+  string one = getInput(zillowData);
+  string two = getInput(zillowData);
+  // string three = getInput(zillowData);
+  // string four = getInput(zillowData);
+  // string five = getInput(zillowData);
+  cout << one << endl << two << endl;
 
   // cout << "-----------------------------Part 2-----------------------------"
   // << endl; TO Do: Part 2
