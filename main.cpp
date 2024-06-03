@@ -25,33 +25,13 @@ int main()
   vector<Region> regions;
   regions = figuringThisOutStill(zillowData);
 
-  cout << "0-5: ";
+  cout << "First Five Regions: " << endl;
   for (int i = 0; i < 5; i++) {
-    cout << regions.at(i).ID << " ";
+    cout << i << ") " << regions.at(i).ID << " ";
     cout << regions.at(i).cityName << " ";
     cout << regions.at(i).state << endl;
   }
   cout << endl;
-  cout << "300-305: ";
-  for (int i = 300; i < 305; i++) {
-    cout << regions.at(i).ID << " ";
-    cout << regions.at(i).cityName << " ";
-    cout << regions.at(i).state << endl;
-  }
-  cout << endl;
-  cout << "2000-2005: ";
-  for (int i = 2000; i < 2005; i++) {
-    cout << regions.at(i).ID << " ";
-    cout << regions.at(i).cityName << " ";
-    cout << regions.at(i).state << endl;
-  }
-  cout << endl;
-  cout << "20000-20005: ";
-  for (int i = 20000; i < 20005; i++) {
-    cout << regions.at(i).ID << " ";
-    cout << regions.at(i).cityName << " ";
-    cout << regions.at(i).state << endl;
-  }
 
   // cout << "-----------------------------Part 2-----------------------------"
   // << endl; TO Do: Part 2
