@@ -28,11 +28,11 @@ int main()
   cout << place.cityName << endl;
   cout << place.state << endl;
 
-  string two = getInputLine(zillowData);
+  // string two = getInputLine(zillowData);
   // string three = getInput(zillowData);
   // string four = getInput(zillowData);
   // string five = getInput(zillowData);
-  cout << one << endl << two << endl;
+  cout << one << endl; //<< endl << two << endl;
 
   // cout << "-----------------------------Part 2-----------------------------"
   // << endl; TO Do: Part 2
