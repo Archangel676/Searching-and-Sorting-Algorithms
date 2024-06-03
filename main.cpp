@@ -26,10 +26,9 @@ int main()
   regions = figuringThisOutStill(zillowData);
 
   for (int i = 0; i < 5; i++) {
-    cout << "Trying index " << i << endl;
     cout << regions.at(i).ID << "   ";
     cout << regions.at(i).cityName << "   ";
-    cout << regions.at(i).state << endl;
+    cout << regions.at(i).state << endl << endl;
   }
 
   // cout << "-----------------------------Part 2-----------------------------"
