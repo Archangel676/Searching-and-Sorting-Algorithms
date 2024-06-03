@@ -40,13 +40,12 @@ int main()
 
   vector<Region> regions;
   regions = figuringThisOutStill(zillowData);
-  zillowData.close();
 
   for (int i = 0; i < 10; i++) {
     cout << "Trying index " << i << endl;
-    cout << regions.at(0).ID << "   ";
-    cout << regions.at(0).cityName << "   ";
-    cout << regions.at(0).state << endl;
+    cout << regions.at(i).ID << "   ";
+    cout << regions.at(i).cityName << "   ";
+    cout << regions.at(i).state << endl;
   }
 
   // cout << "-----------------------------Part 2-----------------------------"
