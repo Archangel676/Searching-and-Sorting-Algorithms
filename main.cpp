@@ -30,6 +30,20 @@ int main()
     cout << regions.at(i).cityName << " ";
     cout << regions.at(i).state << endl;
   }
+  cout << endl;
+
+  for (int i = 300; i < 305; i++) {
+    cout << regions.at(i).ID << " ";
+    cout << regions.at(i).cityName << " ";
+    cout << regions.at(i).state << endl;
+  }
+  cout << endl;
+
+  for (int i = 2000; i < 2005; i++) {
+    cout << regions.at(i).ID << " ";
+    cout << regions.at(i).cityName << " ";
+    cout << regions.at(i).state << endl;
+  }
 
   // cout << "-----------------------------Part 2-----------------------------"
   // << endl; TO Do: Part 2
