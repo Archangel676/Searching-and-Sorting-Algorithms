@@ -40,10 +40,12 @@ Region parseIntoRegion(const string& input)
 vector<Region> figuringThisOutStill(ifstream& addressFile)
 {
   vector<Region> regions;
+
   while (!addressFile.fail()) {
     string location = getInputLine(addressFile);
     Region locAsRegion = parseIntoRegion(location);
     regions.push_back(locAsRegion);
   }
+
   return regions;
 }
