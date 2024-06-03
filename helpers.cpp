@@ -36,7 +36,7 @@ Region parseIntoRegion(const string& input)
 
   return address;
 }
-// vector<Region> regions;
+
 vector<Region> figuringThisOutStill(ifstream& addressFile)
 {
   vector<Region> regions;

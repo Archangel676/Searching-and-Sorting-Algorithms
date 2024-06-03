@@ -19,4 +19,6 @@ string getInputLine(ifstream& addressFile);
 
 Region parseIntoRegion(const string& input);
 
+vector<Region> figuringThisOutStill(ifstream& addressFile);
+
 #endif // HELPERS_H

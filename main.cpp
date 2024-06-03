@@ -21,6 +21,7 @@ int main()
 
   ifstream zillowData;
   zillowData.open("ZILLOW_REGIONS.csv");
+
   string one = getInputLine(zillowData);
   Region place = parseIntoRegion(one);
 
