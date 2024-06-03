@@ -42,12 +42,9 @@ vector<Region> figuringThisOutStill(ifstream& addressFile)
   vector<Region> regions;
 
   while (!addressFile.fail()) {
-    for (int i = 0; i < 10; i++) {
-      string location = getInputLine(addressFile);
-      Region locAsRegion = parseIntoRegion(location);
-      regions.push_back(locAsRegion);
-    }
-    break;
+    string location = getInputLine(addressFile);
+    Region locAsRegion = parseIntoRegion(location);
+    regions.push_back(locAsRegion);
   }
 
   return regions;
