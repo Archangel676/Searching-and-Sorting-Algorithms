@@ -6,7 +6,6 @@
 // vector<Region>& regions
 // Use .at(i)
 
-// Write code to open the file and then read in each line, parse the data, and
 // create a Region. Add them all to a vector<Region> called regions.
 
 // Print out the first five Regions (id, city, and state) in your vector.
@@ -36,4 +35,15 @@ Region parseIntoRegion(const string& input)
   address.state = state;
 
   return address;
+}
+// vector<Region> regions;
+vector<Region> figuringThisOutStill(ifstream& addressFile)
+{
+  vector<Region> regions;
+  while (!addressFile.fail()) {
+    string location = getInputLine(addressFile);
+    Region locAsRegion = parseIntoRegion(location);
+    regions.push_back(locAsRegion);
+  }
+  return regions;
 }
