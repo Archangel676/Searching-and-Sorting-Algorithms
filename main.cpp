@@ -17,7 +17,8 @@ int main()
   cout << "-----------------------------Part 1-----------------------------"
        << endl;
   // TO Do: Part 1
-  string s = getRegion("20330,San Francisco,CA");
+  Region r;
+  string s = r.getRegion("20330,San Francisco,CA");
   cout << s;
 
   // cout << "-----------------------------Part 2-----------------------------"
