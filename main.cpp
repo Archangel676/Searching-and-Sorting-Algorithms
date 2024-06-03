@@ -22,8 +22,12 @@ int main()
   ifstream zillowData;
   zillowData.open("ZILLOW_REGIONS.csv");
   string one = getInput(zillowData);
-  string s = parseIntoRegion(one);
-  cout << s << endl;
+  Region place = parseIntoRegion(one);
+
+  cout << place.ID << endl;
+  cout << place.cityName << endl;
+  cout << place.state << endl;
+
   string two = getInput(zillowData);
   // string three = getInput(zillowData);
   // string four = getInput(zillowData);
