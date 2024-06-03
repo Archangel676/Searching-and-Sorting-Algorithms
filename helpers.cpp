@@ -43,7 +43,7 @@ string getRegion(const string& input)
   // size_t areaCodeLength = fullAreaCode.length();
   // size_t cityLength = fullAreaCode.length();
 
-  string areaCode = input.substr(0, commaOne - 1);
+  string areaCode = input.substr(0, commaOne);
   string city = input.substr(commaOne + 1, (commaTwo - commaOne + 1));
   string state = input.substr(commaTwo + 1);
 
