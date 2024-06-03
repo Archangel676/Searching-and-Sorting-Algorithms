@@ -21,7 +21,7 @@ string getInputLine(ifstream& addressFile)
     return addressString;
 }
 
-string parseIntoRegion(const string& input)
+Region parseIntoRegion(const string& input)
 {
   size_t commaOne = input.find(",");
   size_t commaTwo = input.find(",", commaOne + 1);
@@ -30,5 +30,10 @@ string parseIntoRegion(const string& input)
   string city = input.substr(commaOne + 1, ((commaTwo - 1) - commaOne));
   string state = input.substr(commaTwo + 1);
 
-  return areaCode + " " + city + " " + state;
+  Region address;
+  address.ID = stoi(areaCode);
+  address.cityName = city;
+  address.state = state;
+
+  return address;
 }
