@@ -29,18 +29,21 @@ int main()
   // cout << place.cityName << endl;
   // cout << place.state << endl;
 
-  // string two = getInputLine(zillowData);
-  // string three = getInput(zillowData);
-  // string four = getInput(zillowData);
-  // string five = getInput(zillowData);
-  cout << one << endl; //<< endl << two << endl;
+  string two = getInputLine(zillowData);
+  string three = getInputLine(zillowData);
+  string four = getInputLine(zillowData);
+  string five = getInputLine(zillowData);
+  string six = getInputLine(zillowData);
+  cout << one << endl << two << endl;
+  cout << three << endl << four << endl;
+  cout << five << endl << six << endl;
 
-  vector<Region> regions;
-  regions = figuringThisOutStill(zillowData);
-  cout << "Trying this, hopefully it works:" << endl;
-  cout << regions.at(0).ID << endl;
-  cout << regions.at(0).cityName << endl;
-  cout << regions.at(0).state << endl;
+  // vector<Region> regions;
+  // regions = figuringThisOutStill(zillowData);
+  // cout << "Trying this, hopefully it works:" << endl;
+  // cout << regions.at(0).ID << endl;
+  // cout << regions.at(0).cityName << endl;
+  // cout << regions.at(0).state << endl;
 
   // cout << "-----------------------------Part 2-----------------------------"
   // << endl; TO Do: Part 2
