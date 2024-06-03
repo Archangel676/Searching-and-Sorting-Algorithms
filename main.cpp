@@ -40,18 +40,14 @@ int main()
 
   vector<Region> regions;
   regions = figuringThisOutStill(zillowData);
-  cout << "Trying this, hopefully it works:" << endl;
-  cout << regions.at(0).ID << endl;
-  cout << regions.at(0).cityName << endl;
-  cout << regions.at(0).state << endl;
-  cout << "Trying index 4:" << endl;
-  cout << regions.at(4).ID << endl;
-  cout << regions.at(4).cityName << endl;
-  cout << regions.at(4).state << endl;
-  cout << "Trying index 9:" << endl;
-  cout << regions.at(9).ID << endl;
-  cout << regions.at(9).cityName << endl;
-  cout << regions.at(9).state << endl;
+  zillowData.close();
+
+  for (int i = 0; i < 10; i++) {
+    cout << "Trying index " << i << endl;
+    cout << regions.at(0).ID << "   ";
+    cout << regions.at(0).cityName << "   ";
+    cout << regions.at(0).state << endl;
+  }
 
   // cout << "-----------------------------Part 2-----------------------------"
   // << endl; TO Do: Part 2
