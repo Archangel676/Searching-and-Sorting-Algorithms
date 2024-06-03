@@ -27,7 +27,7 @@ int main()
 
   cout << "First Five Regions: " << endl;
   for (int i = 0; i < 5; i++) {
-    cout << i << ") " << regions.at(i).ID << " ";
+    cout << i + 1 << ") " << regions.at(i).ID << " ";
     cout << regions.at(i).cityName << " ";
     cout << regions.at(i).state << endl;
   }
