@@ -17,7 +17,6 @@ int main()
 {
   cout << "-----------------------------Part 1-----------------------------"
        << endl;
-  // TO Do: Part 1
 
   ifstream zillowData;
   zillowData.open("ZILLOW_REGIONS.csv");
@@ -33,8 +32,9 @@ int main()
   }
   cout << endl;
 
-  // cout << "-----------------------------Part 2-----------------------------"
-  // << endl; TO Do: Part 2
+  cout << "-----------------------------Part 2-----------------------------"
+       << endl;
+  // TO Do: Part 2
 
   // cout << "-----------------------------Part 3-----------------------------"
   // << endl; TO Do: Part 3
