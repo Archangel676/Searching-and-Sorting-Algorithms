@@ -22,26 +22,10 @@ int main()
   ifstream zillowData;
   zillowData.open("ZILLOW_REGIONS.csv");
 
-  // string one = getInputLine(zillowData);
-  // Region place = parseIntoRegion(one);
-
-  // cout << place.ID << endl;
-  // cout << place.cityName << endl;
-  // cout << place.state << endl;
-
-  // string two = getInputLine(zillowData);
-  // string three = getInputLine(zillowData);
-  // string four = getInputLine(zillowData);
-  // string five = getInputLine(zillowData);
-  // string six = getInputLine(zillowData);
-  // cout << one << endl << two << endl;
-  // cout << three << endl << four << endl;
-  // cout << five << endl << six << endl;
-
   vector<Region> regions;
   regions = figuringThisOutStill(zillowData);
 
-  for (int i = 0; i < 10; i++) {
+  for (int i = 0; i < 5; i++) {
     cout << "Trying index " << i << endl;
     cout << regions.at(i).ID << "   ";
     cout << regions.at(i).cityName << "   ";
