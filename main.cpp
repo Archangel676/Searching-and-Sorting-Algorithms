@@ -43,7 +43,7 @@ int main()
   }
 
   clock_t end = clock();
-  cout << "Took " << 1.0 * (end - start) / CLOCKS_PER_SEC << " seconds." << endl
+  cout << "Took " << 1.0 * (end - start) / CLOCKS_PER_SEC << " seconds."
        << endl;
 
   cout << "First Five Regions Sorted by ID Number: " << endl;
@@ -55,9 +55,9 @@ int main()
 
   cout << endl;
 
-  // cout << "-----------------------------Part
-  // 3-----------------------------"
-  // << endl; TO Do: Part 3
+  cout << "-----------------------------Part 3-----------------------------"
+       << endl;
+  // TO Do: Part 3
 
   // cout << "-----------------------------Part
   // 4-----------------------------"
