@@ -96,15 +96,15 @@ int main()
        << endl;
   // TO Do: Part 5
 
-  // int valueToSearchFor = 20317;
+  const int valueToSearchFor = 20317;
 
-  // Region place = binarySearch(valueToSearchFor, regions);
+  Region place = binarySearch(valueToSearchFor, regions);
 
-  // cout << "Region with ID Number 20317: " << endl;
-  // cout << place.ID << " ";
-  // cout << place.cityName << " ";
-  // cout << place.state << endl;
-  // cout << endl;
+  cout << "Region with ID Number 20317: " << endl;
+  cout << place.ID << " ";
+  cout << place.cityName << " ";
+  cout << place.state << endl;
+  cout << endl;
 
   // Use your function to search regions and print out the Region (id, city,
   // state) that has id 20317.
