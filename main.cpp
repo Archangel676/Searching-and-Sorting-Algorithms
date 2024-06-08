@@ -94,7 +94,6 @@ int main()
 
   cout << "-----------------------------Part 5-----------------------------"
        << endl;
-  // TO Do: Part 5
 
   const int valueToSearchFor = 20317;
 
