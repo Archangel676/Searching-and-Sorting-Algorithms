@@ -69,9 +69,6 @@ void placeSmallestRemaining(vector<Region>& vec, size_t index)
   vec.at(minIndex) = temp;
 }
 
-// CURRENT WORK
-// -----------------------------------------------------------------------------------------------
-
 vector<Region> slice(const vector<Region>& vec, size_t startLoc, size_t endLoc)
 {
   vector<Region> newVec;
@@ -128,8 +125,14 @@ void mergeSort(vector<Region>& vec)
   }
 }
 
-void mergeSortOfRegionsByCity(vector<Region>& vec)
-{
-  vector<Region> regionsByName = vec;
-  mergeSort(vec);
-}
+// COME BACK HERE
+// I don't think I did this section how it's asking us to do it :(
+
+// void mergeSortOfRegionsByCity(vector<Region>& vec)
+// {
+//   vector<Region> regionsByName = vec;
+//   mergeSort(vec);
+// }
+
+// CURRENT WORK
+// -----------------------------------------------------------------------------------------------
