@@ -113,8 +113,7 @@ int main()
   string userCityName;
   getline(cin, userCityName);
 
-  // cout << endl << "Here are all listings in " << userCityName << ": " <<
-  // endl;
+  cout << endl << "Here are all listings in " << userCityName << ": " << endl;
 
   for (size_t i = 0; i < prices.size(); ++i) {
     Region location = binaryFind(prices.at(i).regionID, regions);
