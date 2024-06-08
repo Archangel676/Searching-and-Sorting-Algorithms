@@ -80,10 +80,10 @@ int main()
   ifstream zillowData;
   zillowData.open("ZILLOW_DATA.csv");
 
-  vector<Region> regions;
-  regions = parseFileIntoRegions(zillowRegion);
+  vector<PriceRecord> prices;
+  prices = parseFileIntoPriceRecord(zillowData);
 
-  string getInputLine(ifstream & addressFile);
+  // Print out the first five PriceRecord records (regionID, date, and value).
 
   // cout << "-----------------------------Part
   // 5-----------------------------"
