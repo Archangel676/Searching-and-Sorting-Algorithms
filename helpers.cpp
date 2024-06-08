@@ -64,9 +64,9 @@ void placeSmallestRemaining(vector<Region>& vec, size_t index)
       minIndex = i;
     }
   }
-  int temp = vec.at(index).ID;
+  Region temp = vec.at(index); // region in the vector at the index
   vec.at(index).ID = min;
-  vec.at(minIndex).ID = temp;
+  vec.at(minIndex) = temp;
 }
 
 // clock_t start = clock();
