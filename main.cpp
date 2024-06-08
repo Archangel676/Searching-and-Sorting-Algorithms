@@ -57,7 +57,13 @@ int main()
   cout << "-----------------------------Part 3-----------------------------"
        << endl;
 
+  clock_t start = clock();
+
   mergeSort(regions);
+
+  clock_t end = clock();
+  cout << "Merge sort of data by city name took "
+       << 1.0 * (end - start) / CLOCKS_PER_SEC << " seconds." << endl;
 
   cout << "First Five Regions Sorted by City Name: " << endl;
   for (int i = 0; i < 5; i++) {
