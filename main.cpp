@@ -115,6 +115,8 @@ int main()
 
   cout << endl << "Here are all listings in " << userCityName << ": " << endl;
 
+  clock_t start6 = clock();
+
   for (size_t i = 0; i < prices.size(); ++i) {
     Region location = binaryFind(prices.at(i).regionID, regions);
     if (location.cityName == userCityName) {
@@ -124,11 +126,11 @@ int main()
       cout << prices.at(i).value << endl;
     }
   }
-  cout << endl;
+  clock_t end6 = clock();
+  cout << "Binary search of data by city name input took "
+       << 1.0 * (end6 - start6) / CLOCKS_PER_SEC << " seconds." << endl;
 
-  // While testing this, note that there is not pricing data for every city
-  // listed in the Regions file.
-  // Focus on Oregon cities like "Salem" or "Mount Hood Parkdale".
+  // cout << endl;
 
   // After printing out the records identified in the loop, print out the total
   // time this loop takes.
