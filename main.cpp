@@ -36,15 +36,15 @@ int main()
   cout << "-----------------------------Part 2-----------------------------"
        << endl;
 
-  clock_t start = clock();
+  clock_t start2 = clock();
 
   for (size_t i = 0; i < regions.size(); i++) {
     placeSmallestRemaining(regions, i);
   }
 
-  clock_t end = clock();
-  cout << "Insertion sort of data took " << 1.0 * (end - start) / CLOCKS_PER_SEC
-       << " seconds." << endl;
+  clock_t end2 = clock();
+  cout << "Insertion sort of data took "
+       << 1.0 * (end2 - start2) / CLOCKS_PER_SEC << " seconds." << endl;
 
   cout << "First Five Regions Sorted by ID Number: " << endl;
   for (int i = 0; i < 5; i++) {
@@ -57,13 +57,13 @@ int main()
   cout << "-----------------------------Part 3-----------------------------"
        << endl;
 
-  clock_t start = clock();
+  clock_t start3 = clock();
 
   mergeSort(regions);
 
-  clock_t end = clock();
+  clock_t end3 = clock();
   cout << "Merge sort of data by city name took "
-       << 1.0 * (end - start) / CLOCKS_PER_SEC << " seconds." << endl;
+       << 1.0 * (end3 - start3) / CLOCKS_PER_SEC << " seconds." << endl;
 
   cout << "First Five Regions Sorted by City Name: " << endl;
   for (int i = 0; i < 5; i++) {
