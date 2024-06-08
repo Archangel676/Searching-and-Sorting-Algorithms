@@ -36,12 +36,8 @@ struct PriceRecord {
   double value = 0;
 };
 
-// Write code to open the file and then
-// read in each line,
-// parse the data, and
-// create a PriceRecord.
-// Add them all to a vector<PriceRecord> called prices.
+PriceRecord parseIntoPriceRecord(const string& input);
 
-// Print out the first five PriceRecord records (regionID, date, and value).
+vector<PriceRecord> parseFileIntoPriceRecord(ifstream& addressFile);
 
 #endif // HELPERS_H
