@@ -109,12 +109,14 @@ int main()
        << endl;
   // TO Do: Part 6
 
-  cout << "Please input a city name:  ";
+  cout << "Please input a city name: ";
 
   string userCityName;
   getline(cin, userCityName);
 
   cout << userCityName;
+
+  for (int i = 0;)
 
   // Loop through prices and,
   // for each one,
