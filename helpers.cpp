@@ -65,9 +65,12 @@ void placeSmallestRemaining(vector<Region>& vec, size_t index)
     }
   }
   Region temp = vec.at(index); // region in the vector at the index
-  vec.at(index).ID = min;
+  vec.at(index) = vec.at(minIndex);
   vec.at(minIndex) = temp;
 }
+// copy constructor
+// assignment class
+// destructor
 
 // clock_t start = clock();
 // ... code you are timing ...
