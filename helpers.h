@@ -40,9 +40,6 @@ PriceRecord parseIntoPriceRecord(const string& input);
 
 vector<PriceRecord> parseFileIntoPriceRecord(ifstream& addressFile);
 
-Region recursiveFindSearchHelper(const int& value, const vector<Region>& vec,
-                                 int low, int high);
-
-Region binaryFind(const int& value, const vector<Region>& vec);
+Region binaryFind(const int value, const vector<Region>& vec);
 
 #endif // HELPERS_H
