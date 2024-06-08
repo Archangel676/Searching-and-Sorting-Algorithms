@@ -69,10 +69,9 @@ void placeSmallestRemaining(vector<Region>& vec, size_t index)
   vec.at(minIndex) = temp;
 }
 
-template<typename T>
-vector<T> slice(const vector<T>& vec, size_t startLoc, size_t endLoc)
+vector<Region> slice(const vector<Region>& vec, size_t startLoc, size_t endLoc)
 {
-  vector<T> newVec;
+  vector<Region> newVec;
   for (size_t i = startLoc; i < endLoc; i++) {
     newVec.push_back(vec.at(i));
   }
@@ -126,7 +125,7 @@ void mergeSort(vector<Region>& vec)
   }
 }
 
-void mergeSort(vector<Region>& vec, size_t index)
+void mergeSortOfRegionsByCity(vector<Region>& vec)
 {
   vector<Region> regionsByName = vec;
 }
