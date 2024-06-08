@@ -68,3 +68,65 @@ void placeSmallestRemaining(vector<Region>& vec, size_t index)
   vec.at(index) = vec.at(minIndex);
   vec.at(minIndex) = temp;
 }
+
+template<typename T>
+vector<T> slice(const vector<T>& vec, size_t startLoc, size_t endLoc)
+{
+  vector<T> newVec;
+  for (size_t i = startLoc; i < endLoc; i++) {
+    newVec.push_back(vec.at(i));
+  }
+  return newVec;
+}
+
+vector<Region> merge(const vector<Region>& vec1, const vector<Region>& vec2)
+{
+  vector<Region> newVec;
+
+  size_t i = 0;
+  size_t j = 0;
+
+  while (i < vec1.size() && j < vec2.size()) {
+    if (vec1.at(i) < vec2.at(j)) {
+      newVec.push_back(vec1.at(i));
+      i++;
+    } else {
+      newVec.push_back(vec2.at(j));
+      j++;
+    }
+  }
+  while (i < vec1.size()) {
+    newVec.push_back(vec1.at(i));
+    i++;
+  }
+  while (j < vec2.size()) {
+    newVec.push_back(vec2.at(j));
+    j++;
+  }
+  return newVec;
+}
+
+void mergeSort(vector<Region>& vec)
+{
+  if (vec.size() <= 1) {
+    return;
+  }
+
+  size_t halfSize = vec.size() / 2;
+  vector<Region> firstHalf = slice(vec, 0, halfSize);
+  vector<Region> secondHalf = slice(vec, halfSize, vec.size());
+
+  mergeSort(firstHalf);
+  mergeSort(secondHalf);
+
+  vector<Region> total = merge(firstHalf, secondHalf);
+
+  for (size_t i = 0; i < vec.size(); i++) {
+    vec.at(i) = total.at(i);
+  }
+}
+
+void mergeSort(vector<Region>& vec, size_t index)
+{
+  vector<Region> regionsByName = vec;
+}
