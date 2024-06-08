@@ -94,6 +94,15 @@ int main()
        << endl;
   // TO Do: Part 5
 
+  // Implement a non-templated binaryFind function
+  // that takes a vector<Region>& regions and a int id.
+  // It should do a binary search on the vector, searching for the particular
+  // id. Once found, return the Region that corresponds to that id. You do not
+  // have to worry about invalid id's that are not in the vector.
+
+  // Use your function to search regions and print out the Region (id, city,
+  // state) that has id 20317.
+
   // cout << "-----------------------------Part
   // 6-----------------------------"
   // << endl; TO Do: Part 6
