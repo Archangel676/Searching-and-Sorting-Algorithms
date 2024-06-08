@@ -153,7 +153,7 @@ PriceRecord parseIntoPriceRecord(const string& input)
   string curValue = input.substr(commaTwo + 1);
 
   PriceRecord address;
-  address.region = stoi(areaCode);
+  address.regionID = stoi(areaCode);
   address.date = dateVal;
   address.value = stod(curValue);
 
