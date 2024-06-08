@@ -108,4 +108,22 @@ int main()
   cout << "-----------------------------Part 6-----------------------------"
        << endl;
   // TO Do: Part 6
+
+  cout << "Please input a city name:  ";
+  // read in a string using getline (So we can enter more than one word. Like
+  // "La Grande").
+
+  // Loop through prices and,
+  // for each one,
+  // use your binaryFind to look up the Region that is associated with the id
+  // for the current PriceRecord. If the city of that Region matches the city
+  // entered by the user, print out the city, state, date, and value from the
+  // PriceRecord and Region.
+
+  // While testing this, note that there is not pricing data for every city
+  // listed in the Regions file.
+  // Focus on Oregon cities like "Salem" or "Mount Hood Parkdale".
+
+  // After printing out the records identified in the loop, print out the total
+  // time this loop takes.
 }
