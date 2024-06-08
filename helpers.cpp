@@ -172,6 +172,9 @@ vector<PriceRecord> parseFileIntoPriceRecord(ifstream& addressFile)
   return prices;
 }
 
+// Ensure you have proper base cases to avoid infinite recursion.
+// Also, make sure low is always less than or equal to high.
+
 Region recursiveFindSearchHelper(const int& value, const vector<Region>& vec,
                                  int low, int high)
 {
@@ -179,6 +182,8 @@ Region recursiveFindSearchHelper(const int& value, const vector<Region>& vec,
 
   if (vec.at(mid).ID == value)
     return vec.at(mid);
+  else if (low > high)
+    return {};
 
   else if (vec.at(mid).ID < value)
     return recursiveFindSearchHelper(value, vec, mid + 1, high);
