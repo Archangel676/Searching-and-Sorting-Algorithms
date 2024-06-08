@@ -40,12 +40,14 @@ int main()
     placeSmallestRemaining(regions, i);
   }
 
-  cout << "First Five Regions: " << endl;
+  cout << "First Five Regions Sorted by ID Number: " << endl;
   for (int i = 0; i < 5; i++) {
     cout << i + 1 << ") " << regions.at(i).ID << " ";
     cout << regions.at(i).cityName << " ";
     cout << regions.at(i).state << endl;
   }
+
+  cout << endl;
 
   // cout << "-----------------------------Part
   // 3-----------------------------"
