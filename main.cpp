@@ -61,7 +61,7 @@ int main()
 
   clock_t start3 = clock();
 
-  mergeSort(regionsByName);
+  mergeSortOfRegionsByCity(regionsByName);
 
   clock_t end3 = clock();
   cout << "Merge sort of data by city name took "

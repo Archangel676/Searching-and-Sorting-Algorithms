@@ -27,7 +27,7 @@ vector<Region> slice(const vector<Region>& vec, size_t startLoc, size_t endLoc);
 
 vector<Region> merge(const vector<Region>& vec1, const vector<Region>& vec2);
 
-void mergeSort(vector<Region>& vec);
+void mergeSortOfRegionsByCity(vector<Region>& vec);
 
 struct PriceRecord {
   int regionID = 0;

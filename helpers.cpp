@@ -102,7 +102,7 @@ vector<Region> merge(const vector<Region>& vec1, const vector<Region>& vec2)
   return newVec;
 }
 
-void mergeSort(vector<Region>& vec)
+void mergeSortOfRegionsByCity(vector<Region>& vec)
 {
   if (vec.size() <= 1) {
     return;
@@ -112,8 +112,8 @@ void mergeSort(vector<Region>& vec)
   vector<Region> firstHalf = slice(vec, 0, halfSize);
   vector<Region> secondHalf = slice(vec, halfSize, vec.size());
 
-  mergeSort(firstHalf);
-  mergeSort(secondHalf);
+  mergeSortOfRegionsByCity(firstHalf);
+  mergeSortOfRegionsByCity(secondHalf);
 
   vector<Region> total = merge(firstHalf, secondHalf);
 
