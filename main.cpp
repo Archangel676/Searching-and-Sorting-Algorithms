@@ -57,9 +57,11 @@ int main()
   cout << "-----------------------------Part 3-----------------------------"
        << endl;
 
+  vector<Region> regionsByName = regions;
+
   clock_t start3 = clock();
 
-  mergeSort(regions);
+  mergeSort(regionsByName);
 
   clock_t end3 = clock();
   cout << "Merge sort of data by city name took "
@@ -67,9 +69,9 @@ int main()
 
   cout << "First Five Regions Sorted by City Name: " << endl;
   for (int i = 0; i < 5; i++) {
-    cout << i + 1 << ") " << regions.at(i).ID << " ";
-    cout << regions.at(i).cityName << " ";
-    cout << regions.at(i).state << endl;
+    cout << i + 1 << ") " << regionsByName.at(i).ID << " ";
+    cout << regionsByName.at(i).cityName << " ";
+    cout << regionsByName.at(i).state << endl;
   }
   cout << endl;
 
