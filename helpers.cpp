@@ -141,35 +141,36 @@ void mergeSort(vector<Region>& vec)
 //   double value = 0;
 // };
 
-// PriceRecord parseIntoPriceRecord(const string& input)
-// {
-//   size_t commaOne = input.find(",");
-//   size_t commaTwo = input.find(",", commaOne + 1);
+// 30134,2000-05-31,147918.0
 
-//   string areaCode = input.substr(0, commaOne);
-//   string city = input.substr(commaOne + 1, ((commaTwo - 1) - commaOne));
-//   string state = input.substr(commaTwo + 1);
+PriceRecord parseIntoPriceRecord(const string& input)
+{
+  size_t commaOne = input.find(",");
+  size_t commaTwo = input.find(",", commaOne + 1);
 
-//   Region address;
-//   address.ID = stoi(areaCode);
-//   address.cityName = city;
-//   address.state = state;
+  string areaCode = input.substr(0, commaOne);
+  string dateVal = input.substr(commaOne + 1, ((commaTwo - 1) - commaOne));
+  string curValue = input.substr(commaTwo + 1);
 
-//   return address;
-// }
+  PriceRecord address;
+  address.region = stoi(areaCode);
+  address.date = dateVal;
+  address.value = stod(curValue);
 
-// good underneath
-//  vector<PriceRecord> parseFileIntoPriceRecord(ifstream& addressFile)
-//  {
-//    vector<PriceRecord> prices;
+  return address;
+}
 
-//   while (!addressFile.fail()) {
-//     string location = getInputLine(addressFile);
-//     if (location == "The end") {
-//       break;
-//     }
-//     PriceRecord locAsPriceRecord = parseIntoPriceRecord(location);
-//     regions.push_back(locAsPriceRecord);
-//   }
-//   return prices;
-// }
+vector<PriceRecord> parseFileIntoPriceRecord(ifstream& addressFile)
+{
+  vector<PriceRecord> prices;
+
+  while (!addressFile.fail()) {
+    string location = getInputLine(addressFile);
+    if (location == "The end") {
+      break;
+    }
+    PriceRecord locAsPriceRecord = parseIntoPriceRecord(location);
+    prices.push_back(locAsPriceRecord);
+  }
+  return prices;
+}
