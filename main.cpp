@@ -118,11 +118,12 @@ int main()
 
   for (size_t i = 0; i < prices.size(); ++i) {
     Region location = binaryFind(prices.at(i).regionID, regions);
-    if (location.cityName == userCityName)
+    if (location.cityName == userCityName) {
       cout << location.cityName << " ";
-    cout << location.state << endl;
-    cout << prices.at(i).date << " ";
-    cout << prices.at(i).value << " ";
+      cout << location.state << endl;
+      cout << prices.at(i).date << " ";
+      cout << prices.at(i).value << " ";
+    }
   }
   cout << endl;
 
