@@ -114,8 +114,7 @@ int main()
   string userCityName;
   getline(cin, userCityName);
 
-    // read in a string using getline (So we can enter more than one word. Like
-  // "La Grande").
+  cout << userCityName;
 
   // Loop through prices and,
   // for each one,
