@@ -23,7 +23,7 @@ int main()
   zillowData.open("ZILLOW_REGIONS.csv");
 
   vector<Region> regions;
-  regions = figuringThisOutStill(zillowData);
+  regions = parseFileIntoRegions(zillowData);
 
   cout << "First Five Regions: " << endl;
   for (int i = 0; i < 5; i++) {

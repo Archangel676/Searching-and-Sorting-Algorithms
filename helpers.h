@@ -19,7 +19,7 @@ string getInputLine(ifstream& addressFile);
 
 Region parseIntoRegion(const string& input);
 
-vector<Region> figuringThisOutStill(ifstream& addressFile);
+vector<Region> parseFileIntoRegions(ifstream& addressFile);
 
 void placeSmallestRemaining(vector<Region>& vec, size_t index);
 
@@ -35,5 +35,13 @@ struct PriceRecords {
   string date = "";
   double value = 0;
 };
+
+// Write code to open the file and then
+// read in each line,
+// parse the data, and
+// create a PriceRecord.
+// Add them all to a vector<PriceRecord> called prices.
+
+// Print out the first five PriceRecord records (regionID, date, and value).
 
 #endif // HELPERS_H
