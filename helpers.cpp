@@ -127,3 +127,9 @@ void mergeSort(vector<Region>& vec)
     vec.at(i) = total.at(i);
   }
 }
+
+void mergeSortOfRegionsByCity(vector<Region>& vec)
+{
+  vector<Region> regionsByName = vec;
+  mergeSort(vec);
+}
