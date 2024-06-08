@@ -128,7 +128,7 @@ void mergeSort(vector<Region>& vec)
   }
 }
 
-void mergeSortOfRegionsByCity(vector<Region>& vec)
-{
-  vector<Region> regionsByName = vec;
-}
+// void mergeSortOfRegionsByCity(vector<Region>& vec)
+// {
+//   vector<Region> regionsByName = vec;
+// }
