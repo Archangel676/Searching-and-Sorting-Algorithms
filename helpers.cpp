@@ -186,7 +186,7 @@ Region recursiveBinarySearchHelper(const int& value, const vector<Region>& vec,
     return recursiveBinarySearchHelper(value, vec, low, mid - 1);
 }
 
-Region binarySearch(const int& value, const vector<Region>& vec)
+Region binaryFind(const int& value, const vector<Region>& vec)
 {
   int size = static_cast<int>(vec.size());
   return recursiveBinarySearchHelper(value, vec, 0, size - 1);

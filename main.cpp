@@ -97,7 +97,7 @@ int main()
 
   const int valueToSearchFor = 20317;
 
-  Region place = binarySearch(valueToSearchFor, regions);
+  Region place = binaryFind(valueToSearchFor, regions);
 
   cout << "Region with ID Number 20317: " << endl;
   cout << place.ID << " ";
@@ -116,10 +116,10 @@ int main()
 
   cout << userCityName;
 
-  for (int i = 0;)
+  for (size_t i = 0; i < prices.size(); ++i) {
+    Region place = binaryFind(const int& value, const vector<Region>& vec);
+  }
 
-  // Loop through prices and,
-  // for each one,
   // use your binaryFind to look up the Region that is associated with the id
   // for the current PriceRecord. If the city of that Region matches the city
   // entered by the user, print out the city, state, date, and value from the
