@@ -75,7 +75,6 @@ int main()
 
   cout << "-----------------------------Part 4-----------------------------"
        << endl;
-  // TO Do: Part 4
 
   ifstream zillowData;
   zillowData.open("ZILLOW_DATA.csv");
@@ -91,11 +90,9 @@ int main()
   }
   cout << endl;
 
-  // Print out the first five PriceRecord records (regionID, date, and value).
-
-  // cout << "-----------------------------Part
-  // 5-----------------------------"
-  // << endl; TO Do: Part 5
+  cout << "-----------------------------Part 5-----------------------------"
+       << endl;
+  // TO Do: Part 5
 
   // cout << "-----------------------------Part
   // 6-----------------------------"
