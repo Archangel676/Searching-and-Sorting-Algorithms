@@ -58,17 +58,24 @@ int main()
        << endl;
 
   mergeSort(regions);
-  // TO Do: Part 3
 
-  // cout << "-----------------------------Part
-  // 4-----------------------------"
-  // << endl; TO Do: Part 4
+  cout << "First Five Regions Sorted by City Name: " << endl;
+  for (int i = 0; i < 5; i++) {
+    cout << i + 1 << ") " << regions.at(i).ID << " ";
+    cout << regions.at(i).cityName << " ";
+    cout << regions.at(i).state << endl;
 
-  // cout << "-----------------------------Part
-  // 5-----------------------------"
-  // << endl; TO Do: Part 5
+    cout << endl;
 
-  // cout << "-----------------------------Part
-  // 6-----------------------------"
-  // << endl; TO Do: Part 6
-}
+    // cout << "-----------------------------Part
+    // 4-----------------------------"
+    // << endl; TO Do: Part 4
+
+    // cout << "-----------------------------Part
+    // 5-----------------------------"
+    // << endl; TO Do: Part 5
+
+    // cout << "-----------------------------Part
+    // 6-----------------------------"
+    // << endl; TO Do: Part 6
+  }
