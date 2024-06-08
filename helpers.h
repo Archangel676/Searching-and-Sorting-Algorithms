@@ -21,4 +21,6 @@ Region parseIntoRegion(const string& input);
 
 vector<Region> figuringThisOutStill(ifstream& addressFile);
 
+void placeSmallestRemaining(vector<Region>& vec, size_t index);
+
 #endif // HELPERS_H
