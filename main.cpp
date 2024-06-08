@@ -107,14 +107,13 @@ int main()
 
   cout << "-----------------------------Part 6-----------------------------"
        << endl;
-  // TO Do: Part 6
 
   cout << "Please input a city name: ";
 
   string userCityName;
   getline(cin, userCityName);
 
-  cout << userCityName << endl;
+  cout << endl << "Here are all listings in " << userCityName << ": " << endl;
 
   for (size_t i = 0; i < prices.size(); ++i) {
     Region location = binaryFind(prices.at(i).regionID, regions);
