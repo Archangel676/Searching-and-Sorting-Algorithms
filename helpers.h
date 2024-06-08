@@ -30,7 +30,7 @@ vector<Region> merge(const vector<Region>& vec1, const vector<Region>& vec2);
 void mergeSort(vector<Region>& vec);
 
 struct PriceRecord {
-  int region = 0;
+  int regionID = 0;
   // that will look like "2020-12-31"
   string date = "";
   double value = 0;
