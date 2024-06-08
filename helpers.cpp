@@ -51,3 +51,20 @@ vector<Region> figuringThisOutStill(ifstream& addressFile)
   }
   return regions;
 }
+
+void placeSmallestRemaining(vector<Region>& vec, size_t index)
+{
+  int min = vec.at(index).ID;
+  size_t minIndex = index;
+  size_t size = vec.size();
+
+  for (size_t i = index; i < size; ++i) {
+    if (min > vec.at(i).ID) {
+      min = vec.at(i).ID;
+      minIndex = i;
+    }
+  }
+  int temp = vec.at(index).ID;
+  vec.at(index).ID = min;
+  vec.at(minIndex).ID = temp;
+}
