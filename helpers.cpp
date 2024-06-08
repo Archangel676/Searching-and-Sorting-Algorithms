@@ -201,17 +201,15 @@ Region binaryFind(const int value, const vector<Region>& vec)
 {
   int low = 0;
   int high = static_cast<int>(vec.size()) - 1;
-  int mid = (low + high) / 2;
 
   while (low <= high) {
+    int mid = (low + high) / 2;
     if (vec.at(mid).ID == value)
       return vec.at(mid);
     else if (vec.at(mid).ID < value) {
       low = mid + 1;
-      mid = (low + high) / 2;
     } else {
       high = mid - 1;
-      mid = (low + high) / 2;
     }
   }
   return {};
