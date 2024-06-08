@@ -52,11 +52,12 @@ int main()
     cout << regions.at(i).cityName << " ";
     cout << regions.at(i).state << endl;
   }
-
   cout << endl;
 
   cout << "-----------------------------Part 3-----------------------------"
        << endl;
+
+  mergeSort(regions);
   // TO Do: Part 3
 
   // cout << "-----------------------------Part
