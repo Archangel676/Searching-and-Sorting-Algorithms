@@ -64,10 +64,13 @@ void placeSmallestRemaining(vector<Region>& vec, size_t index)
       minIndex = i;
     }
   }
-  Region temp = vec.at(index); // region in the vector at the index
+  Region temp = vec.at(index);
   vec.at(index) = vec.at(minIndex);
   vec.at(minIndex) = temp;
 }
+
+// CURRENT WORK
+// -----------------------------------------------------------------------------------------------
 
 vector<Region> slice(const vector<Region>& vec, size_t startLoc, size_t endLoc)
 {
@@ -86,7 +89,7 @@ vector<Region> merge(const vector<Region>& vec1, const vector<Region>& vec2)
   size_t j = 0;
 
   while (i < vec1.size() && j < vec2.size()) {
-    if (vec1.at(i) < vec2.at(j)) {
+    if (vec1.at(i).cityName < vec2.at(j).cityName) {
       newVec.push_back(vec1.at(i));
       i++;
     } else {
