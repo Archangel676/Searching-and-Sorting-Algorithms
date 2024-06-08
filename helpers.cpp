@@ -6,9 +6,6 @@
 // vector<Region>& regions
 // Use .at(i)
 
-// create a Region. Add them all to a vector<Region> called regions.
-
-// Print out the first five Regions (id, city, and state) in your vector.
 string getInputLine(ifstream& addressFile)
 {
   string addressString;
