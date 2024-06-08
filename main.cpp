@@ -36,9 +36,15 @@ int main()
   cout << "-----------------------------Part 2-----------------------------"
        << endl;
 
+  clock_t start = clock();
+
   for (size_t i = 0; i < regions.size(); i++) {
     placeSmallestRemaining(regions, i);
   }
+
+  clock_t end = clock();
+  cout << "Took " << 1.0 * (end - start) / CLOCKS_PER_SEC << " seconds."
+       << endl;
 
   cout << "First Five Regions Sorted by ID Number: " << endl;
   for (int i = 0; i < 5; i++) {
