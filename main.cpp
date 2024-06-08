@@ -110,7 +110,11 @@ int main()
   // TO Do: Part 6
 
   cout << "Please input a city name:  ";
-  // read in a string using getline (So we can enter more than one word. Like
+
+  string userCityName;
+  getline(cin, userCityName);
+
+    // read in a string using getline (So we can enter more than one word. Like
   // "La Grande").
 
   // Loop through prices and,
