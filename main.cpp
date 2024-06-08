@@ -114,16 +114,17 @@ int main()
   string userCityName;
   getline(cin, userCityName);
 
-  cout << userCityName;
+  cout << userCityName << endl;
 
   for (size_t i = 0; i < prices.size(); ++i) {
-    Region place = binaryFind(const int& value, const vector<Region>& vec);
+    Region place = binaryFind(prices.at(i).regionID, regions);
+    if (place.cityName == userCityName)
+      cout << place.cityName << " ";
+    cout << place.state << endl;
+    cout << prices.at(i).date << " ";
+    cout << prices.at(i).value << " ";
   }
-
-  // use your binaryFind to look up the Region that is associated with the id
-  // for the current PriceRecord. If the city of that Region matches the city
-  // entered by the user, print out the city, state, date, and value from the
-  // PriceRecord and Region.
+  cout << endl;
 
   // While testing this, note that there is not pricing data for every city
   // listed in the Regions file.
