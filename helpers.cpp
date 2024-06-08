@@ -123,7 +123,7 @@ void mergeSort(vector<Region>& vec)
 }
 
 // COME BACK HERE
-// I don't think I did this section how it's asking us to do it :(
+// I don't think I did ^this section how it's asking us to do it :(
 
 // void mergeSortOfRegionsByCity(vector<Region>& vec)
 // {
