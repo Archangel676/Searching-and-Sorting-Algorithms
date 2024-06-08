@@ -128,9 +128,8 @@ int main()
   }
   clock_t end6 = clock();
   cout << "Binary search of data by city name input took "
-       << 1.0 * (end6 - start6) / CLOCKS_PER_SEC << " seconds." << endl;
-
-  // cout << endl;
+       << 1.0 * (end6 - start6) / CLOCKS_PER_SEC << " seconds." << endl
+       << endl;
 
   // After printing out the records identified in the loop, print out the total
   // time this loop takes.
