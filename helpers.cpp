@@ -133,3 +133,43 @@ void mergeSort(vector<Region>& vec)
 
 // CURRENT WORK
 // -----------------------------------------------------------------------------------------------
+
+// struct PriceRecord {
+//   int region = 0;
+//   // that will look like "2020-12-31"
+//   string date = "";
+//   double value = 0;
+// };
+
+// PriceRecord parseIntoPriceRecord(const string& input)
+// {
+//   size_t commaOne = input.find(",");
+//   size_t commaTwo = input.find(",", commaOne + 1);
+
+//   string areaCode = input.substr(0, commaOne);
+//   string city = input.substr(commaOne + 1, ((commaTwo - 1) - commaOne));
+//   string state = input.substr(commaTwo + 1);
+
+//   Region address;
+//   address.ID = stoi(areaCode);
+//   address.cityName = city;
+//   address.state = state;
+
+//   return address;
+// }
+
+// good underneath
+//  vector<PriceRecord> parseFileIntoPriceRecord(ifstream& addressFile)
+//  {
+//    vector<PriceRecord> prices;
+
+//   while (!addressFile.fail()) {
+//     string location = getInputLine(addressFile);
+//     if (location == "The end") {
+//       break;
+//     }
+//     PriceRecord locAsPriceRecord = parseIntoPriceRecord(location);
+//     regions.push_back(locAsPriceRecord);
+//   }
+//   return prices;
+// }

@@ -19,11 +19,11 @@ int main()
   cout << "-----------------------------Part 1-----------------------------"
        << endl;
 
-  ifstream zillowData;
-  zillowData.open("ZILLOW_REGIONS.csv");
+  ifstream zillowRegion;
+  zillowRegion.open("ZILLOW_REGIONS.csv");
 
   vector<Region> regions;
-  regions = parseFileIntoRegions(zillowData);
+  regions = parseFileIntoRegions(zillowRegion);
 
   cout << "First Five Regions: " << endl;
   for (int i = 0; i < 5; i++) {
@@ -73,9 +73,17 @@ int main()
   }
   cout << endl;
 
-  // cout << "-----------------------------Part
-  // 4-----------------------------"
-  // << endl; TO Do: Part 4
+  cout << "-----------------------------Part 4-----------------------------"
+       << endl;
+  // TO Do: Part 4
+
+  ifstream zillowData;
+  zillowData.open("ZILLOW_DATA.csv");
+
+  vector<Region> regions;
+  regions = parseFileIntoRegions(zillowRegion);
+
+  string getInputLine(ifstream & addressFile);
 
   // cout << "-----------------------------Part
   // 5-----------------------------"
