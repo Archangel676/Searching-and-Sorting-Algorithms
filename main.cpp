@@ -82,7 +82,7 @@ int main()
   vector<PriceRecord> prices;
   prices = parseFileIntoPriceRecord(zillowData);
 
-  cout << "First Five PriceRecords: " << endl;
+  cout << "First Five Price Records: " << endl;
   for (int i = 0; i < 5; i++) {
     cout << i + 1 << ") " << prices.at(i).regionID << " ";
     cout << prices.at(i).date << " ";
