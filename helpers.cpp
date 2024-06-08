@@ -175,24 +175,44 @@ vector<PriceRecord> parseFileIntoPriceRecord(ifstream& addressFile)
 // Ensure you have proper base cases to avoid infinite recursion.
 // Also, make sure low is always less than or equal to high.
 
-Region recursiveFindSearchHelper(const int& value, const vector<Region>& vec,
-                                 int low, int high)
+// Region recursiveFindSearchHelper(const int& value, const vector<Region>& vec,
+//                                  int low, int high)
+// {
+//   int mid = (low + high) / 2;
+
+//   if (vec.at(mid).ID == value)
+//     return vec.at(mid);
+//   else if (low > high)
+//     return {};
+
+//   else if (vec.at(mid).ID < value)
+//     return recursiveFindSearchHelper(value, vec, mid + 1, high);
+//   else
+//     return recursiveFindSearchHelper(value, vec, low, mid - 1);
+// }
+
+// Region binaryFind(const int& value, const vector<Region>& vec)
+// {
+//   int size = static_cast<int>(vec.size());
+//   return recursiveFindSearchHelper(value, vec, 0, size - 1);
+// }
+
+Region binaryFind(const int value, const vector<Region>& vec)
 {
+  int low = 0;
+  int high = static_cast<int>(vec.size()) - 1;
   int mid = (low + high) / 2;
 
-  if (vec.at(mid).ID == value)
-    return vec.at(mid);
-  else if (low > high)
-    return {};
-
-  else if (vec.at(mid).ID < value)
-    return recursiveFindSearchHelper(value, vec, mid + 1, high);
-  else
-    return recursiveFindSearchHelper(value, vec, low, mid - 1);
-}
-
-Region binaryFind(const int& value, const vector<Region>& vec)
-{
-  int size = static_cast<int>(vec.size());
-  return recursiveFindSearchHelper(value, vec, 0, size - 1);
+  while (low <= high) {
+    if (vec.at(mid).ID == value)
+      return vec.at(mid);
+    else if (vec.at(mid).ID < value) {
+      low = mid + 1;
+      mid = (low + high) / 2;
+    } else {
+      high = mid - 1;
+      mid = (low + high) / 2;
+    }
+  }
+  return {};
 }
