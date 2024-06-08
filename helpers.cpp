@@ -68,3 +68,9 @@ void placeSmallestRemaining(vector<Region>& vec, size_t index)
   vec.at(index).ID = min;
   vec.at(minIndex).ID = temp;
 }
+
+// clock_t start = clock();
+// ... code you are timing ...
+// clock_t end = clock();
+// cout << "Took " << 1.0 * (end - start) / CLOCKS_PER_SEC << " seconds." <<
+// endl;
