@@ -31,7 +31,6 @@ void mergeSortOfRegionsByCity(vector<Region>& vec);
 
 struct PriceRecord {
   int regionID = 0;
-  // that will look like "2020-12-31"
   string date = "";
   double value = 0;
 };
