@@ -172,8 +172,8 @@ vector<PriceRecord> parseFileIntoPriceRecord(ifstream& addressFile)
   return prices;
 }
 
-Region recursiveBinarySearchHelper(const int& value, const vector<Region>& vec,
-                                   int low, int high)
+Region recursiveFindSearchHelper(const int& value, const vector<Region>& vec,
+                                 int low, int high)
 {
   int mid = (low + high) / 2;
 
@@ -181,13 +181,13 @@ Region recursiveBinarySearchHelper(const int& value, const vector<Region>& vec,
     return vec.at(mid);
 
   else if (vec.at(mid).ID < value)
-    return recursiveBinarySearchHelper(value, vec, mid + 1, high);
+    return recursiveFindSearchHelper(value, vec, mid + 1, high);
   else
-    return recursiveBinarySearchHelper(value, vec, low, mid - 1);
+    return recursiveFindSearchHelper(value, vec, low, mid - 1);
 }
 
 Region binaryFind(const int& value, const vector<Region>& vec)
 {
   int size = static_cast<int>(vec.size());
-  return recursiveBinarySearchHelper(value, vec, 0, size - 1);
+  return recursiveFindSearchHelper(value, vec, 0, size - 1);
 }
