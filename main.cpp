@@ -105,10 +105,7 @@ int main()
   cout << place.state << endl;
   cout << endl;
 
-  // Use your function to search regions and print out the Region (id, city,
-  // state) that has id 20317.
-
-  // cout << "-----------------------------Part
-  // 6-----------------------------"
-  // << endl; TO Do: Part 6
+  cout << "-----------------------------Part 6-----------------------------"
+       << endl;
+  // TO Do: Part 6
 }
